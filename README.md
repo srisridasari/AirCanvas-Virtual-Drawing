@@ -5,7 +5,7 @@
     NumPy (np): Used for numerical operations.
     Mediapipe (mediapipe): Provides tools for building various types of AI-powered solutions.
     deque from collections: A deque is used as a queue with a maximum length for storing color points.
-    pytesseract: A Python wrapper for Google's Tesseract-OCR Engine. However, it's not used in this code.
+    
 
 2)Initialization: 
     Deques are initialized to store points for different colors.

@@ -1,4 +1,4 @@
-# aircanvas
+# AirCanvas
 
 1)Imports:
     OpenCV (cv2): Main library for computer vision tasks.
@@ -16,7 +16,7 @@
     The code sets up hand landmark detection using the Mediapipe library.
 
 4)Webcam Initialization:
-  T  he webcam feed is captured and processed frame by frame.
+  The webcam feed is captured and processed frame by frame.
 
 5)Main Loop:
     Within the loop, frames are read from the webcam.

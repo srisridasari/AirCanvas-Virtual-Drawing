@@ -27,7 +27,5 @@ AirCanvas is a virtual drawing application that uses computer vision and hand ge
   Press the q key to exit, releasing the webcam and closing all windows.
 # Usage
   1.Run the Script: Ensure you have the required libraries and launch the script.
-  
   2.Interact with the Interface: Use hand gestures to draw, change colors, or clear the canvas.
-  
   3.Exit: Press q to close the application.

@@ -1,7 +1,7 @@
-#AirCanvas
+AirCanvas
 AirCanvas is a virtual drawing application that uses computer vision and hand gesture recognition to enable touch-free drawing. Users can select colors and draw on a canvas using only their hands, captured through a webcam.
 
-#Key Components
+Key Components
 1. Imports
 OpenCV (cv2): For capturing webcam feed and processing frames.
 NumPy (np): For handling numerical operations.

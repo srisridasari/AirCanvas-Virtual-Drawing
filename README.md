@@ -1,33 +1,31 @@
-# AirCanvas
+#AirCanvas
+AirCanvas is a virtual drawing application that uses computer vision and hand gesture recognition to enable touch-free drawing. Users can select colors and draw on a canvas using only their hands, captured through a webcam.
 
-1)Imports:
-    OpenCV (cv2): Main library for computer vision tasks.
-    NumPy (np): Used for numerical operations.
-    Mediapipe (mediapipe): Provides tools for building various types of AI-powered solutions.
-    deque from collections: A deque is used as a queue with a maximum length for storing color points.
-    
-
-2)Initialization: 
-    Deques are initialized to store points for different colors.
-    Index variables are set for each color.A kernel is defined for dilation purposes.Color information and index are initialized.
-    The main window for drawing (paintWindow) is created and configured with rectangles and text for different color options.
-
-3)Mediapipe Setup:
-    The code sets up hand landmark detection using the Mediapipe library.
-
-4)Webcam Initialization:
-  The webcam feed is captured and processed frame by frame.
-
-5)Main Loop:
-    Within the loop, frames are read from the webcam.
-    Landmark detection is performed on each frame.
-    Hand landmarks are processed, and finger positions are determined.
-    Based on finger positions, the application responds to commands like changing colors or clearing the canvas.
-    Drawing on the canvas is done by detecting the position of the hand and using it as a pointer.
-    Lines are drawn on both the frame and the canvas based on the movement of the hand.
-
-6)Display:
-    The modified frame and the canvas are displayed in separate OpenCV windows.
-
-7)Termination:
-    The loop continues until the 'q' key is pressed, upon which the webcam feed is released, and all OpenCV windows are destroyed.
+#Key Components
+1. Imports
+OpenCV (cv2): For capturing webcam feed and processing frames.
+NumPy (np): For handling numerical operations.
+Mediapipe: For hand tracking and gesture detection.
+Deque (from collections): For managing color-specific points in the drawing queue.
+2. Initialization
+Separate deques for different color points.
+Color and index initialization for easy switching between colors.
+Configured canvas (paintWindow) with color selection buttons for clear, blue, green, red, and yellow.
+3. Mediapipe Setup
+Uses Mediapipe’s hand tracking for detecting hand landmarks and interpreting gestures.
+4. Webcam Feed
+Captures frames from the webcam, flips them for a mirrored view, and processes them in real-time.
+5. Main Drawing Loop
+Processes each frame to detect hand landmarks.
+Uses finger positions to interpret gestures for:
+Color Selection: Switch colors based on finger position over the color buttons.
+Clear Canvas: Erase the canvas by selecting the "CLEAR" button.
+Drawing: Tracks finger movement to draw lines on the canvas.
+6. Display Output
+Displays the live drawing and color selection interface in separate OpenCV windows.
+7. Termination
+Press the q key to exit, releasing the webcam and closing all windows.
+Usage
+Run the Script: Ensure you have the required libraries and launch the script.
+Interact with the Interface: Use hand gestures to draw, change colors, or clear the canvas.
+Exit: Press q to close the application
